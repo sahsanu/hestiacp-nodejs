@@ -20,11 +20,11 @@ echo -e "───────────────────────�
 sudo cp -r quickinstall-app/NodeJs /usr/local/hestia/web/src/app/WebApp/Installers/
 echo -e "${START} Copy QuickInstall App ✅"
 
-sudo cp templates/* /usr/local/hestia/data/templates/web/nginx
+sudo cp templates/* /usr/local/hestia/data/templates/web/nginx/php-fpm
 echo -e "${START} Copy Templates ✅"
 
-sudo chmod 644 /usr/local/hestia/data/templates/web/nginx/NodeJS.tpl
-sudo chmod 644 /usr/local/hestia/data/templates/web/nginx/NodeJS.stpl
+sudo chmod 644 /usr/local/hestia/data/templates/web/nginx/php-fpm/NodeJS.tpl
+sudo chmod 644 /usr/local/hestia/data/templates/web/nginx/php-fpm/NodeJS.stpl
 
 sudo chmod -R 644 /usr/local/hestia/web/src/app/WebApp/Installers/NodeJs/
 sudo chmod 755 /usr/local/hestia/web/src/app/WebApp/Installers/NodeJs
